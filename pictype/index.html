@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pictype privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>Pictype — Privacy Policy</h1>
+<p>Last updated: 2026-10-19 (version 0.2.0)</p>
+<p>Pictype is a Chrome extension that lets you right-click an image (or use the toolbar button to take all images on a page) and save it as JPG, PNG, WebP, GIF, PDF, BMP or ICO.</p>
+<h2>What Pictype reads</h2>
+<p>Only the images you choose. When you pick a format (or press "Save all", which lists the pictures on the current page) from the right-click menu, Pictype reads that one image (from its web address, or through the page you are on), converts it in your browser and saves the result to your computer. To offer "Save background image as…", a small script on web pages looks, only at the moment you right-click, at the picture set as the background of the element under the pointer. It does not read page text, forms, passwords, cookies or links, and it does not keep a history of what you visit or save.</p>
+<h2>What is stored, and where</h2>
+<p>Only your own settings and the last result, in your browser on your device (chrome.storage.local): quality, background colour, largest size, resize preset, the metadata and skip-small-pictures settings, the format last used on each website (website names only), SVG scale, file-name template, the ask-where-to-save and remember-last-format choices, the last format you used, and a one-line note about your last save. Removing the extension deletes them.</p>
+<h2>What is sent over the network</h2>
+<p>Pictype has no server, no account and no analytics, and sends your data nowhere. The only request it makes is to download the image you asked it to convert, from the address that image already has, the same way your browser loaded it. The converted file never leaves your computer.</p>
+<h2>What we do not do</h2>
+<p>We do not collect, sell or share your data, use it for advertising, use it to judge creditworthiness, or transfer it to anyone. Pictype does not load or run remote code.</p>
+<h2>Permissions</h2>
+<ul>
+<li>
+<p><code>contextMenus</code>: adds the "Save image as…" and "Save background image as…" menu items.</p>
+</li>
+<li>
+<p><code>downloads</code>: saves the converted file.</p>
+</li>
+<li>
+<p><code>storage</code>: keeps your settings.</p>
+</li>
+<li>
+<p><code>offscreen</code>: runs the image conversion and builds ZIP files in a hidden page inside the extension.</p>
+</li>
+<li>
+<p><code>activeTab</code> and <code>scripting</code>: after you pick a format, read the image through the page you are on, and show a short message in that page if saving failed.</p>
+</li>
+<li>
+<p>Optional access to all sites: asked only when you first save an image, so Pictype can fetch the image you right-clicked from its own site. You can decline or remove it at any time in Pictype's options.</p>
+</li>
+<li>
+<p>Script on http and https pages: only to notice a right-click on a background image.</p>
+</li>
+</ul>
+<h2>Changes</h2>
+<p>If this policy changes, the date above changes and the new text is published at the same address.</p>
+<h2>Contact</h2>
+<p>extensionsforseo@gmail.com</p></body></html>

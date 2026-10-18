@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>geo-analyzer privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>GEO Analyzer — Privacy Policy</h1>
+<p>Last updated: 2026-10-19</p>
+<p>GEO Analyzer is a Chrome extension that audits a web page for how well AI search tools can find, understand and quote it.</p>
+<h2>What GEO Analyzer reads</h2>
+<p>When you click "Analyze page", it reads the text and markup of the page in your active tab to run its checks. In the Tools page, it opens the pages you type in (Compare, Batch) in background tabs, reads them the same way, and closes the tabs. Nothing is read until you ask.</p>
+<h2>What is stored, and where</h2>
+<ul>
+<li>
+<p>The score history: for each page you analyze, the date, score, grade and the pass/fail status of each check, for the last 20 scans (up to 100 pages). The page address is the key.</p>
+</li>
+<li>
+<p>The last report, so that the print view can show it.
+These are saved in your own browser (chrome.storage.local) on your device. You can clear a page's history or all history in the popup, or remove everything by removing the extension.
+The extension does not store the full text of the pages it reads. The report keeps short excerpts of the most quotable passages and weakest section headings of the page you analyzed.</p>
+</li>
+</ul>
+<h2>What is sent over the network</h2>
+<p>GEO Analyzer has no server, no account system, no analytics and no advertising. It does not send any data to us or to any third party.
+To check AI crawler access, it requests the audited site's own robots.txt, llms.txt, llms-full.txt and sitemap files, and one copy of the audited page, from that site only. These requests are made without cookies, the way a crawler would, and go only to the address you are auditing.
+The Schema helper and exports run locally. Exported files are saved to your device only.</p>
+<h2>What we do not do</h2>
+<p>We do not sell or share your data, use it for advertising, use it to judge creditworthiness, or transfer it to anyone. GEO Analyzer does not load or run remote code.</p>
+<h2>Permissions</h2>
+<p><code>activeTab</code> and <code>scripting</code> (read the page you choose to analyze), <code>storage</code> (local score history), <code>downloads</code> (save the exports you ask for), and access to all sites (to fetch robots.txt, sitemap and llms.txt from the site being audited, and to audit URLs you enter in Tools). No page is touched until you click.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the date above changes and the new text is published at the same address.</p>
+<h2>Contact</h2>
+<p>extensionsforseo@gmail.com</p>
+<p>GEO Analyzer is independent and is not affiliated with OpenAI, Anthropic, Perplexity or Google.</p></body></html>

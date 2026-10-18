@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PhoneSite privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>PhoneSite — Privacy Policy</h1>
+<p>Last updated: 2026-10-19 (version 0.2.0)</p>
+<p>PhoneSite is a Chrome extension that opens the websites you choose in their phone version on a desktop computer.</p>
+<h2>What PhoneSite does on your sites</h2>
+<p>For each website you add to your list, PhoneSite changes what your own browser tells that website about itself: the User-Agent and mobile client-hint request headers, and what the page's script sees in navigator (for example the browser name, platform and touch support). This only happens on sites you added. It does not read the text, forms, passwords, cookies or links of any page, and it does not change page content. The websites you list receive the phone values instead of your desktop values, because that is the point of the extension.</p>
+<h2>What is stored, and where</h2>
+<p>Only your own settings, saved in your browser (chrome.storage.local) on your device: your list of sites, which phone you chose for each, each site's switches (on, phone window only, dark view), the pause switch, your default phone, and the size and place of each site's phone window. While phone windows are open, the browser also holds a short list of them in session storage, which is cleared when the browser closes. If you use Screenshot, the picture is created on your device and saved to your downloads folder by your own click; it is never sent anywhere. "Copy device info" copies text to your clipboard only when you click it. Removing the extension deletes them.</p>
+<h2>What is sent over the network</h2>
+<p>Nothing by PhoneSite itself. It makes no network requests of its own, has no server, no account system, no analytics and no advertising. We do not receive any of your data. (Your browser still talks to the websites you visit, as it always does; PhoneSite only changes the identity headers on requests to the sites you listed.)</p>
+<h2>What we do not do</h2>
+<p>We do not collect, sell or share your data, use it for advertising, use it to judge creditworthiness, or transfer it to anyone. PhoneSite does not load or run remote code. It does not download, scrape or save other people's content.</p>
+<h2>Permissions</h2>
+<ul>
+<li>
+<p><code>declarativeNetRequest</code>: to set the phone headers on requests to the sites you listed.</p>
+</li>
+<li>
+<p><code>scripting</code>: to run a small page script, only on the sites you listed, so the page agrees with the headers, and to add the dark-view style sheet where you switched it on.</p>
+</li>
+<li>
+<p>Access to a site (optional, requested one site at a time when you add it): needed to do the two things above on that site. Removing the site removes the access.</p>
+</li>
+<li>
+<p><code>storage</code>: to save your settings.</p>
+</li>
+<li>
+<p><code>activeTab</code>: so the popup can show the current site, reload it, open it in a phone-sized window and take the screenshot you ask for when you click the toolbar icon.</p>
+</li>
+</ul>
+<h2>Your responsibility</h2>
+<p>PhoneSite is not affiliated with any website. Follow each website's terms of use. PhoneSite does not bypass logins or terms.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the date above changes and the new text is published at the same address.</p>
+<h2>Contact</h2>
+<p>extensionsforseo@gmail.com</p></body></html>
