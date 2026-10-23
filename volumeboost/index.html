@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VolumeBoost privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>VolumeBoost - Privacy Policy</h1>
-<p>Last updated: 2026-10-20</p>
+<p>Last updated: 2026-10-24</p>
 <p>VolumeBoost is a Chrome extension that makes the sound of the current tab louder or quieter.</p>
 <h2>What VolumeBoost does with your pages</h2>
 <p>When you click the toolbar icon or press a shortcut, VolumeBoost adds a volume control to the audio and video players of the tab you are on. It does not read, record, copy or send the audio, the page text, or anything you type.</p>
@@ -17,6 +17,10 @@
 The current level of a tab lives in that tab's page memory and is gone when the page is reloaded or closed. You can delete everything by removing the extension.</p>
 </li>
 </ul>
+<h2>Tabs playing sound (optional)</h2>
+<p>The popup lists the other tabs that are making sound. Without any extra access it shows only numbers ("Tab 1 - playing"), with buttons to switch to the tab and to mute it. If you press "Show tabs playing sound", Chrome asks for the optional "tabs" permission; if you allow it, the popup shows each tab's title, site name and small site icon so you can recognise it. These are shown in the popup only; they are not stored beyond the open popup and are never sent anywhere. The small site icon is the icon the site itself provides for its tab, so showing it makes your browser request that icon image from the site you already have open. To change the volume of another tab, you press "Allow volume control" on that tab, and Chrome asks for access to that one site only. You can withdraw any of this at chrome://extensions. While the browser is open, VolumeBoost keeps the IDs of tabs whose volume you changed (browser session storage) so those tabs stay in the list; this is cleared when the browser closes.</p>
+<h2>Languages</h2>
+<p>The popup is available in English, Spanish, Hindi, French, German and Brazilian Portuguese, chosen from your browser language. This uses Chrome's built-in translation files shipped inside the extension; nothing is downloaded.</p>
 <h2>What is sent over the network</h2>
 <p>Nothing. VolumeBoost has no server, no account, no analytics and no advertising, and makes no network requests of its own.</p>
 <h2>Uninstall page</h2>
@@ -26,7 +30,7 @@ The current level of a tab lives in that tab's page memory and is gone when the 
 <h2>What we do not do</h2>
 <p>We do not sell or share data, use it for advertising or credit decisions, or transfer it to anyone. VolumeBoost does not load or run remote code.</p>
 <h2>Permissions</h2>
-<p><code>activeTab</code> (act on the tab you chose, only when you click or press a shortcut), <code>scripting</code> (add the bundled volume control to that tab), <code>storage</code> (your settings). No access to all websites.</p>
+<p><code>activeTab</code> (act on the tab you chose, only when you click or press a shortcut), <code>scripting</code> (add the bundled volume control to that tab), <code>storage</code> (your settings). Optional, only if you press the matching buttons: <code>tabs</code> (tab titles and sites for the list) and access to individual sites you choose (to change the volume of those tabs). No access to all websites is requested at install.</p>
 <h2>Changes</h2>
 <p>If this policy changes, the date above changes and the new text is published at the same address.</p>
 <h2>Contact</h2>

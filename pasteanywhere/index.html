@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PasteAnywhere privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>PasteAnywhere — Privacy Policy</h1>
+<p>Last updated: 2026-10-24 (version 0.1.0)</p>
+<p>PasteAnywhere is a Chrome extension that turns paste, copy, cut, text selection and the right-click menu back on, for the current tab only, in web pages that block them.</p>
+<h2>What PasteAnywhere reads</h2>
+<p>Nothing. When you open the toolbar popup on a tab and press the button, PasteAnywhere runs a small script in that one tab. The script only adds event handlers and a style sheet so the page cannot cancel paste, copy, cut, selection and the right-click menu. It does not read the text of pages, forms, passwords, cookies, links or anything you type.</p>
+<h2>Your clipboard</h2>
+<p>PasteAnywhere never reads, stores or sends what is on your clipboard. There is one optional exception. If you tick "Paste as plain text" (off by default), then at the moment you paste into a text field, the script takes the plain-text version of what you are pasting and inserts it without formatting. That text stays in the page's memory for that single insertion. It is not saved, not logged and not sent anywhere. Untick the option and the clipboard is again not touched at all.</p>
+<h2>What is stored, and where</h2>
+<p>Only your own settings and the rating-reminder counters, saved in your browser (chrome.storage.local) on your device: the five on/off choices (paste, copy and cut, selection, right-click, plain text), the install date, how many times you turned it on, and whether you dismissed the reminder. Removing the extension deletes them. Whether it is on for a tab is held only in that page and is gone when you reload or leave the page.</p>
+<h2>What is sent over the network</h2>
+<p>Nothing. PasteAnywhere makes no network requests. It has no server, no account system, no analytics and no advertising. We do not receive any of your data.</p>
+<h2>Uninstall page</h2>
+<p>When you remove PasteAnywhere, Chrome opens a page on our policy site (startuptalkyindia.github.io). The address contains only the extension name, its version and its ID. The page sends nothing; it shows a short "what went wrong?" form that opens an email draft you may choose to send. The site host may keep ordinary access logs.</p>
+<h2>Rating reminder</h2>
+<p>PasteAnywhere keeps three local counters in your browser: when it was installed, how many times you turned it on, and whether you dismissed the reminder. After at least 7 days and 10 uses, the toolbar popup (never a website) shows one small card asking you to rate the extension. It is shown at most twice, can be dismissed for good, offers no reward, and the counters are never sent anywhere.</p>
+<h2>Responsible use</h2>
+<p>PasteAnywhere is meant for convenience and accessibility, for example password managers and assistive tools, and for copying text you are entitled to copy. You are responsible for respecting the rules of your exam, workplace and the websites you use.</p>
+<h2>What we do not do</h2>
+<p>We do not collect, sell or share your data, use it for advertising, use it to judge creditworthiness, or transfer it to anyone. PasteAnywhere does not load or run remote code.</p>
+<h2>Permissions</h2>
+<ul>
+<li>
+<p><code>activeTab</code>: temporary access to the one tab where you open the popup, so the script can run there.</p>
+</li>
+<li>
+<p><code>scripting</code>: to run the extension's own bundled script in that tab, and to remove its changes again.</p>
+</li>
+<li>
+<p><code>storage</code>: to save your settings and the local reminder counters.
+It requests no access to websites in advance and has no always-running content script.</p>
+</li>
+</ul>
+<h2>Changes</h2>
+<p>If this policy changes, the date above changes and the new text is published at the same address.</p>
+<h2>Contact</h2>
+<p>extensionsforseo@gmail.com</p></body></html>
