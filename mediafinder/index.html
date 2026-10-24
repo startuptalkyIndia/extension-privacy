@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MediaFinder privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>MediaFinder — Privacy Policy</h1>
-<p>Last updated: 2026-10-24 (version 0.1.0)</p>
+<p>Last updated: 2026-10-24 (version 0.1.1)</p>
 <p>MediaFinder is a Chrome extension that shows an inventory of the images, video and audio used by the web page in your current tab, with sizes and quality checks, and lets you save plain direct files you have the right to keep. It is an inspector. It does not download streaming video.</p>
 <h2>What MediaFinder reads</h2>
 <p>Only when you click the MediaFinder icon, it reads the page in that one tab: the page's image, video and audio elements, their sources, the page's CSS background images, icon and social-image tags, links to media files, and the browser's own network timing records for the page (which files loaded and how big the browser measured them). Nothing read this way is stored or sent to us. It uses Chrome's activeTab permission, so it has no access to any other tab and no standing access to any website.</p>
@@ -19,7 +19,7 @@
 </li>
 </ul>
 <h2>Saving files, and what MediaFinder refuses</h2>
-<p>Save works only for a plain direct file served as an ordinary http(s) address. It never saves streams (HLS, DASH, blob or MediaSource), never merges segments, never works around DRM or a sign-in, and offers no saving at all on a built-in list of major streaming, music and social platforms. Please save only files you have the right to keep.</p>
+<p>Save works only for a plain direct file served as an ordinary http(s) address. It never saves streams (HLS, DASH, blob or MediaSource), never merges segments, never works around DRM or a sign-in, and offers no saving at all on a built-in list of major streaming, music and social platforms. If a saved link turns out, after redirects, to end on one of those platforms or is not a plain media file, the download is cancelled and deleted. Size checks never contact localhost or private-network addresses and do not follow redirects. Please save only files you have the right to keep.</p>
 <h2>Uninstall page</h2>
 <p>When you remove MediaFinder, Chrome opens a page on our policy site (startuptalkyindia.github.io). The address contains only the extension name, its version and its ID. Nothing else is sent from the page; it shows an optional "what went wrong?" form that only opens an email draft you can choose to send. The website host may keep ordinary access logs, as any website does.</p>
 <h2>Rating reminder</h2>
@@ -29,7 +29,7 @@
 <h2>What we do not do</h2>
 <p>We do not sell or share data, use it for advertising, use it to judge creditworthiness, or transfer it to anyone. MediaFinder does not load or run remote code.</p>
 <h2>Permissions</h2>
-<p><code>activeTab</code> (read the tab you click the icon on), <code>scripting</code> (run MediaFinder's own packaged functions in that tab), <code>downloads</code> (save the one plain direct file you press Save on), <code>storage</code> (the local counters for the rating reminder). No host permissions at install. Optional access to other sites is requested only when you press "Check sizes", for the sites named, and removed afterwards.</p>
+<p><code>activeTab</code> (read the tab you click the icon on), <code>scripting</code> (run MediaFinder's own packaged functions in that tab), <code>downloads</code> (save the one plain direct file you press Save on), <code>alarms</code> (a one-minute timer that removes the optional site access), <code>storage</code> (the local counters for the rating reminder). No host permissions at install. Optional access to other sites is requested only when you press "Check sizes", for the sites named, and removed afterwards.</p>
 <h2>Changes</h2>
 <p>If this policy changes, the date above changes and the new text is published at the same address.</p>
 <h2>Contact</h2>
