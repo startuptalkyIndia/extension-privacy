@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MailSleuth privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>MailSleuth - Privacy Policy</h1>
+<p>Last updated: 2026-10-25 (version 0.1.0)</p>
+<p>MailSleuth is a Chrome extension that works only on Gmail (mail.google.com). When you open an email, it shows which platform sent it and whether it looks consistent, worked out on your computer from that message's own headers and body.</p>
+<p>Contact: extensionsforseo@gmail.com</p>
+<h2>What MailSleuth reads</h2>
+<p>Only on mail.google.com, and only the message you have open: its headers (sender, return address, route, sign-in results and similar) and its body (to find links and tracking pictures). It does not read other messages, your mailbox list, your contacts, other tabs or your browsing history. It does not open messages on its own: it reads a message only because you opened it.</p>
+<h2>What is collected and sent</h2>
+<p>Nothing is collected and nothing is sent to us. MailSleuth has no server, no account system, no analytics and no advertising. The only network request it makes is a request from the Gmail page to Gmail itself (mail.google.com, using your existing Gmail session) for the "original message" text of the message you opened, so its headers can be read. Links and pictures inside a message are never loaded or visited by MailSleuth, and no result is ever sent anywhere.</p>
+<h2>What is stored, where and for how long</h2>
+<ul>
+<li>
+<p>Settings: whether the badge is on, whether list labels are on (off by default), and which checks you switched off. Kept in your browser (chrome.storage.local) until you change them or remove the extension.</p>
+</li>
+<li>
+<p>Reminder counters: the install date, the number of messages checked (a number only), and the state of the optional rating reminder (not shown, shown, snoozed, finished; how many times shown; when it was snoozed). Kept in your browser (chrome.storage.local), never sent anywhere, until you remove the extension.</p>
+</li>
+<li>
+<p>In memory only, in the open Gmail tab: the original message text while it is being analysed (then discarded), and for up to the last 25 messages you opened in that tab the result of the analysis: the subject line (shortened), sender name and address, the platform name, the check results, and the names of the websites that links and pictures point to (not full addresses, no message text). This is gone when you close or reload the tab. The ids of messages already counted for the reminder, and short labels for conversations you opened in this tab (used only by the optional list label feature), are kept the same way.</p>
+</li>
+<li>
+<p>Nothing about any message is written to disk, to browser storage or to any server.</p>
+</li>
+</ul>
+<h2>Uninstall page</h2>
+<p>When you remove MailSleuth, Chrome opens a page on our policy site (startuptalkyindia.github.io). The address contains only the extension name, its version and its ID. Nothing is sent from that page; it offers a form that opens an email draft which you may choose to send. The site host may keep ordinary access logs.</p>
+<h2>Rating reminder</h2>
+<p>MailSleuth keeps local counters (install date, number of messages checked, reminder state) in your browser. After at least 7 days and 10 messages checked it may show one small card in its own popup asking you to rate it. It is shown at most twice, only in the extension's popup (never on Gmail or any website), is the same for everyone, and the counters are never sent anywhere. Choosing "Rate" or "Send feedback" opens the Chrome Web Store reviews page or an email draft only because you clicked.</p>
+<h2>What we do not do</h2>
+<p>We do not sell or share your data, use it for advertising or credit decisions, or transfer it to anyone. MailSleuth does not load or run remote code and does no DNS lookups or other network calls.</p>
+<h2>Permissions</h2>
+<ul>
+<li>
+<p>storage: save your settings and the local reminder counters.</p>
+</li>
+<li>
+<p>Access to https://mail.google.com/*: show the badge on Gmail and make the one same-origin request for the open message's original text. No other website is accessible to it.</p>
+</li>
+</ul>
+<h2>Limits worth knowing</h2>
+<p>Results are educated guesses from a message's own headers, which a sender can forge; they are not a judgement that a message is safe or unsafe.</p>
+<h2>Changes and contact</h2>
+<p>If this policy changes, the date above changes. Questions: extensionsforseo@gmail.com.</p>
+<p>MailSleuth is independent and is not affiliated with Google.</p></body></html>
