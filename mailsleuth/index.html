@@ -1,9 +1,9 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MailSleuth privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>MailSleuth - Privacy Policy</h1>
-<p>Last updated: 2026-10-25 (version 0.1.0)</p>
+<p>Last updated: 2026-10-25 (version 0.1.1)</p>
 <p>MailSleuth is a Chrome extension that works only on Gmail (mail.google.com). When you open an email, it shows which platform sent it and whether it looks consistent, worked out on your computer from that message's own headers and body.</p>
 <p>Contact: extensionsforseo@gmail.com</p>
 <h2>What MailSleuth reads</h2>
-<p>Only on mail.google.com, and only the message you have open: its headers (sender, return address, route, sign-in results and similar) and its body (to find links and tracking pictures). It does not read other messages, your mailbox list, your contacts, other tabs or your browsing history. It does not open messages on its own: it reads a message only because you opened it.</p>
+<p>Only on mail.google.com, and only the message you have open: its headers (sender, return address, route, sign-in results and similar) and its body (to find links and tracking pictures). It does not read the text of other messages, the subjects, senders or previews shown in your mailbox list, your contacts, other tabs or your browsing history. It does not open messages on its own: it reads a message only because you opened it. To do its job it also looks at the structure of the Gmail page: the message id and the position of the subject heading of the open conversation, and your clicks inside the conversation (only to know which message of a conversation you are looking at; nothing about the clicks is recorded). If you switch on the optional list labels (off by default), it reads, for each row of the conversation list on the page (at most 150), only the row's conversation id attribute and where its subject cell is, to put a small label next to rows for conversations you already opened in this tab; it does not read the row's text.</p>
 <h2>What is collected and sent</h2>
 <p>Nothing is collected and nothing is sent to us. MailSleuth has no server, no account system, no analytics and no advertising. The only network request it makes is a request from the Gmail page to Gmail itself (mail.google.com, using your existing Gmail session) for the "original message" text of the message you opened, so its headers can be read. Links and pictures inside a message are never loaded or visited by MailSleuth, and no result is ever sent anywhere.</p>
 <h2>What is stored, where and for how long</h2>
@@ -18,7 +18,10 @@
 <p>In memory only, in the open Gmail tab: the original message text while it is being analysed (then discarded), and for up to the last 25 messages you opened in that tab the result of the analysis: the subject line (shortened), sender name and address, the platform name, the check results, and the names of the websites that links and pictures point to (not full addresses, no message text). This is gone when you close or reload the tab. The ids of messages already counted for the reminder, and short labels for conversations you opened in this tab (used only by the optional list label feature), are kept the same way.</p>
 </li>
 <li>
-<p>Nothing about any message is written to disk, to browser storage or to any server.</p>
+<p>In the browser's session storage (chrome.storage.session, cleared when the browser closes): the ids of messages already counted for the reminder (message ids only, at most 500), so reloading Gmail does not count a message twice.</p>
+</li>
+<li>
+<p>Nothing else about any message is written to disk, to browser storage or to any server.</p>
 </li>
 </ul>
 <h2>Uninstall page</h2>
