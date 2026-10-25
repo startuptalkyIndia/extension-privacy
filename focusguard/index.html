@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FocusGuard privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>FocusGuard — Privacy Policy</h1>
-<p>Last updated: 2026-10-19 (version 0.2.1)</p>
+<p>Last updated: 2026-10-19 (version 0.2.2)</p>
 <p>FocusGuard is a Chrome extension that shows how much time you spend on each website and helps you keep it in check with daily limits, pause-first sites and focus sessions.</p>
 <h2>What FocusGuard looks at</h2>
 <p>To do its job, FocusGuard checks which website is in the tab you are currently looking at, using the tab's web address. It does not read the contents of any page, what you type, your searches, or your other tabs, and it has no content scripts.</p>
@@ -10,7 +10,7 @@
 <p>Your settings: limits, pause-first sites, focus lists, default focus length, strict mode.</p>
 </li>
 <li>
-<p>Daily totals: for each day, the site name (for example "example.com") and the seconds you were active on it, kept for 60 days. FocusGuard never stores full page addresses, page titles or page content.</p>
+<p>Daily totals: for each day, the site name (for example "example.com") and the seconds you were active on it, kept for 60 days. FocusGuard never saves page addresses, page titles or page content to disk.</p>
 </li>
 <li>
 <p>Hour-by-hour totals: for each day, 24 numbers of seconds, kept for 60 days.</p>
@@ -19,13 +19,25 @@
 <p>Your focus forest: the date, length and result (grown or withered) of each focus session, and temporary "extra time" passes.</p>
 </li>
 </ul>
-<p>Time is counted only while you are active; time while you are idle or your screen is locked is not counted.</p>
+<p>Time is counted only while Chrome is the app in front and you are active. Time while another app is in front, you are idle, or your screen is locked is not counted. A tab that is playing sound, or a fullscreen window, still counts when you are not touching the mouse or keyboard (so watching a video is counted). Private (incognito) windows are ignored: nothing is recorded and no rules apply there.</p>
+<h3>Page addresses: exactly what is kept, and for how long</h3>
+<ul>
+<li>
+<p>On disk (chrome.storage.local, kept up to 60 days): site names and seconds only. No page addresses.</p>
+</li>
+<li>
+<p>In memory only (chrome.storage.session): for each open tab, the address of its last page and of a page FocusGuard just stopped, <strong>without the query string and without any #fragment</strong> (for example <code>https://example.com/watch</code>, never <code>?v=...</code>). This exists only so "Back to work" and "Continue" can return you to the right page. It is removed when that tab closes and is wiped when the browser closes. It is never written to disk and never sent anywhere.</p>
+</li>
+<li>
+<p>The stop page's own address contains only the rule and a site name, so no page address ends up in your browser history.</p>
+</li>
+</ul>
 <h2>What is sent over the network</h2>
 <p>Nothing. FocusGuard has no server, no account system, no analytics, no advertising and makes no network requests. We do not receive any of your data.</p>
 <h2>Uninstall page</h2>
 <p>When you remove FocusGuard, Chrome opens a page on our policy site (startuptalkyindia.github.io). The address contains only the extension name, its version and its ID. The page sends nothing: it shows a short "what went wrong?" form that opens an email draft you may choose to send. The site host may keep ordinary web-server access logs.</p>
 <h2>Rating reminder</h2>
-<p>After you have had FocusGuard for at least 7 days and used it at least 10 times, the popup may show one small card asking if you would like to rate it. It uses local counters in your browser (install date, a use count, and whether you dismissed it), shown to everyone in the same way, at most twice, and never sent anywhere. "Don't ask again" stops it for good. It appears only inside FocusGuard's own popup, never on websites.</p>
+<p>After you have had FocusGuard for at least 7 days and used it at least 10 times, the popup may show one small card asking if you would like to rate it. It uses local counters in your browser (install date, a use count, how many times the card was shown and whether you dismissed it), shown to everyone in the same way, at most twice (each time it appears counts, even if you ignore it), and never sent anywhere. "Don't ask again" stops it for good. It appears only inside FocusGuard's own popup, never on websites.</p>
 <h2>Your control</h2>
 <ul>
 <li>
@@ -33,6 +45,9 @@
 </li>
 <li>
 <p>"Delete all tracked history" in Settings removes the daily and hour-by-hour totals.</p>
+</li>
+<li>
+<p>Strict mode is a speed bump you set for yourself, not a lock: to switch it off in Settings you must type a short sentence. Someone who really wants to can still remove the extension.</p>
 </li>
 <li>
 <p>Removing the extension removes all of its data.</p>
