@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ReadEase privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>ReadEase (Reader Mode: Read Aloud &amp; Dyslexia-Friendly) — Privacy Policy</h1>
+<p>Last updated: 2026-10-26 (version 0.1.1)</p>
+<p>ReadEase is a Chrome extension that opens the article you are looking at in a clean reading view, with optional read-aloud, a focus ruler and other reading aids. It works entirely on your device.</p>
+<h2>What ReadEase reads</h2>
+<p>ReadEase reads a web page only when you click its toolbar button or press its keyboard shortcut (Alt+Shift+R), and only the page in the tab you are using at that moment. It has no permission to read any site at other times. It works on a copy of the page, picks out the article text, links and image addresses, removes scripts, forms, frames, styles and other active content, and shows the result in a new tab (the reader tab). The original page is not changed.</p>
+<h2>What is stored, and where</h2>
+<ul>
+<li>
+<p>Settings (theme, font, text size, line spacing, column width, margins, whether images and the focus ruler are on, reading speed and your chosen voice) are saved in your browser (chrome.storage.local) on your device.</p>
+</li>
+<li>
+<p>Three small counters for the rating reminder (see below): when the extension was installed, how many times you have opened a reading view, and whether the reminder was shown or dismissed. They are numbers and dates only, kept on your device.</p>
+</li>
+<li>
+<p>The article itself is never saved. Between your click and the reader tab opening, the extracted article waits briefly in the browser's in-memory session storage (it is not written to disk) and is deleted the moment the reader tab takes it. If the reader tab never opens, the leftover is removed the next time you use ReadEase (once it is ten minutes old) or when the browser closes. While the reader tab is open the article is held in that tab's memory; closing or reloading the tab clears it. Chrome's own history and tab list show the reader tab like any other tab, including the article's title; that is Chrome's feature, not something ReadEase keeps.</p>
+</li>
+<li>
+<p>ReadEase has no server, no account system, no analytics and no advertising.</p>
+</li>
+</ul>
+<h2>What is sent over the network</h2>
+<p>ReadEase itself sends nothing. It makes no network requests of its own and contains no tracking or analytics code. Three things your browser may do because of choices you make:</p>
+<ul>
+<li>
+<p>Images: they are off by default. If you show an image (one click, or the "Show images" setting), your browser loads it directly from the site that hosts it, over https, as it would on the original page. That site can see your address as usual. ReadEase asks the browser not to send a referrer.</p>
+</li>
+<li>
+<p>Voices: read aloud uses the speech voices built into your browser and device. Voices marked "network" in ReadEase's list are produced by an online service run by the voice's provider; ReadEase never selects such a voice for you; if you choose one yourself, your browser sends the sentences you listen to that service. Voices marked "On this device" do not use the network.</p>
+</li>
+<li>
+<p>Links: clicking a link in the article opens it in a new tab, as a normal link.</p>
+</li>
+</ul>
+<p>Copy as plain text puts the text on your clipboard only when you click the button. Print / save as PDF uses your browser's print dialog.</p>
+<h2>Uninstall page</h2>
+<p>When ReadEase is removed, Chrome opens a page on our policy site (startuptalkyindia.github.io/extension-privacy/bye/). The address contains only the extension's name, version and ID. Nothing is sent from the page itself, and the host may keep ordinary access logs.</p>
+<h2>Rating reminder</h2>
+<p>After at least a week of use and several reading views, the Settings panel of the reader tab may show a small card asking whether you would like to rate the extension. It is counted from the local counters above, which never leave your browser, is shown at most twice, and has a "Don't ask again" button. It is only ever shown inside ReadEase's own reader tab, never on websites.</p>
+<h2>What we do not do</h2>
+<p>We do not sell or share your data, use it for advertising, use it to judge creditworthiness, or transfer it to anyone, because we do not receive it. ReadEase does not load or run remote code.</p>
+<h2>Permissions</h2>
+<p><code>activeTab</code> (read the page you click on, only when you click), <code>scripting</code> (run ReadEase's own bundled extraction code in that tab), <code>storage</code> (your settings, the three counters, and the short in-memory hand-over described above).</p>
+<h2>Third-party components</h2>
+<p>Article extraction uses Mozilla Readability (Apache License 2.0). Cleaning uses DOMPurify (Cure53 and contributors; used under the Apache License 2.0). The dyslexia-friendly font is Atkinson Hyperlegible (Braille Institute of America, SIL Open Font License 1.1). All three are bundled in the extension and run locally.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the date above changes and the new text is published at the same address.</p>
+<h2>Contact</h2>
+<p>extensionsforseo@gmail.com</p>
+<p>ReadEase is independent and is not affiliated with or endorsed by Mozilla, Google, Cure53 or the Braille Institute.</p></body></html>
