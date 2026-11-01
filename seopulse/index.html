@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SeoPulse privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>SEO Pulse — Privacy Policy</h1>
+<p>Last updated: 2026-11-01 (version 0.1.0)</p>
+<p>SEO Pulse is a Chrome extension that checks the on-page SEO of the web page you are looking at and shows how it may look in Google results and when shared on social sites. It runs entirely in your browser. It has no server, no account system, no analytics and no advertising. We do not receive any of your data.</p>
+<h2>What SEO Pulse reads</h2>
+<p>Only when you click the SEO Pulse toolbar icon, it reads the page in the active tab: the title, meta tags, headings, links, images, structured data (JSON-LD, microdata), the amount of text, and the page's navigation timing (status code and redirect count). It does this once per scan, inside your browser, and shows you the result in its popup. It does not run in the background and it does not run on pages you have not clicked it on. It cannot read Chrome's own pages, the Chrome Web Store or PDF files.</p>
+<h2>What leaves your device</h2>
+<p>Nothing is sent to us. Two optional, visible requests go to other servers, and nowhere else:</p>
+<ul>
+<li>
+<p><strong>robots.txt (on by default, can be switched off in the Export &amp; data tab):</strong> one request to the address /robots.txt of the same website you are checking, to see whether it blocks Googlebot from that page. It is sent without cookies, redirects are not followed (a robots.txt that redirects is shown as "not checked"), and its answer is only read, not stored.</p>
+</li>
+<li>
+<p><strong>Social image previews (off by default):</strong> if you tick "Load social image previews", the popup asks the server named in the page's own og:image or twitter:image tag (https addresses only; an address that is itself private or local is refused) for that picture, like any image request. Like any image, it is loaded by the browser, which follows redirects: if that server redirects the picture elsewhere, the browser follows it. That server can see your IP address and browser, as with any web image. Nothing else is sent.</p>
+</li>
+</ul>
+<p>If you open "Rate on Chrome Web Store" the Chrome Web Store opens in a new tab, and "Send feedback" opens an email draft; neither is sent by SEO Pulse.</p>
+<h2>What is stored, and where</h2>
+<p>Saved in your browser (chrome.storage.local) on your device, and deleted when you remove the extension:</p>
+<ul>
+<li>
+<p>Your settings: keep a local report list (on/off), check robots.txt (on/off), load social images (on/off).</p>
+</li>
+<li>
+<p>A local report list, if you leave it on: for each page you check, its hostname and path only (no query string and no #fragment), and for the last 50 reports of that page: the date, the SEO Pulse version, one letter per check (passed, high, medium, low, information, not checked), the issue counts, and the page's title, meta description, canonical address and first H1 heading (each cut to 200 characters), word count and HTTP status. At most 100 pages are kept; the least recently used go first. The button "Clear all saved reports" deletes all of it.</p>
+</li>
+<li>
+<p>The install date, a counter of how many reports you have run, and the state of the rating reminder (see below).</p>
+</li>
+</ul>
+<p>Reports you copy or download (Markdown, JSON, CSV) go to your clipboard or your Downloads folder only when you click; SEO Pulse does not keep a copy beyond the list above.</p>
+<h2>Uninstall page</h2>
+<p>When you remove SEO Pulse, Chrome opens a page on our policy site (startuptalkyindia.github.io). The address contains only the extension name, its version and its ID. Nothing is sent from the page; it shows a short "what went wrong?" form that opens an email draft you may choose to send. The site host may keep ordinary access logs.</p>
+<h2>Rating reminder</h2>
+<p>SEO Pulse keeps three local counters: when it was installed, how many reports you have run, and how many times the reminder was shown and when (and whether you turned it off). After at least 7 days and 10 reports, the popup (never a website) shows one small card asking you to rate the extension. It is shown at most twice, at least 30 days apart, is the same for everyone, offers no reward, can be dismissed for good, and the counters are never sent anywhere.</p>
+<h2>What we do not do</h2>
+<p>We do not collect, sell or share your data, use it for advertising, use it to judge creditworthiness, or transfer it to anyone. SEO Pulse does not load or run remote code. It is not affiliated with or endorsed by Google, Facebook, LinkedIn, X or Slack.</p>
+<h2>Permissions</h2>
+<ul>
+<li>
+<p><code>activeTab</code>: lets SEO Pulse read the tab you clicked it on, for that click only.</p>
+</li>
+<li>
+<p><code>scripting</code>: runs the page reader (a function bundled in the extension) in that tab.</p>
+</li>
+<li>
+<p><code>storage</code>: saves your settings, the local report list and the reminder counters.
+SEO Pulse asks for no access to websites in advance, no tabs permission, and has no always-on script.</p>
+</li>
+</ul>
+<h2>Changes</h2>
+<p>If this policy changes, the date above changes and the new text is published at the same address.</p>
+<h2>Contact</h2>
+<p>extensionsforseo@gmail.com</p></body></html>
