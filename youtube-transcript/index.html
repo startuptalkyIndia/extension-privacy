@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YouTube-Transcript privacy policy</title><style>body{max-width:720px;margin:0 auto;padding:24px 16px;font:16px/1.6 system-ui,sans-serif;color:#1c2330;background:#fff}@media(prefers-color-scheme:dark){body{background:#161b22;color:#e6e9f0}a{color:#7aa7ff}}h1,h2{line-height:1.25}code{background:rgba(127,127,127,.18);padding:1px 4px;border-radius:4px}</style></head><body><h1>YouTube Transcript Downloader — Privacy Policy</h1>
+<p>Last updated: 2026-11-02 (version 1.1.1)</p>
+<p>YouTube Transcript Downloader is a Chrome extension that shows the captions of the YouTube video you are watching as a transcript, and lets you search, copy or save it. It runs in your browser. It has no server of its own, no account system, no analytics and no advertising. We do not receive any of your data.</p>
+<h2>What the extension reads</h2>
+<p>Only when you click its toolbar icon on a YouTube video page, it reads from that page: the video's id, title, channel name, publish date, whether it is live, whether YouTube lets it play, and the list of caption tracks (each one's address, language and name) with the list of translation languages YouTube offers. It reads this from the page's own player data, once per click, inside your browser, and shows you the result in its popup. It does not read anything else on the page (no comments, no recommendations, no account details, no video or audio streams), and it does not run in the background or on pages you have not clicked it on. It cannot read YouTube Music or players embedded in other websites.</p>
+<h2>What leaves your device</h2>
+<p>Nothing is sent to us. The extension asks YouTube's own servers, from the YouTube page you are on, for two things, and nowhere else:</p>
+<ul>
+<li>
+<p><strong>The caption file you chose:</strong> one request for the caption track you picked (and, if you chose a translation, the translated version) at an address that must be on youtube.com and under YouTube's caption path. Addresses that do not meet that check are refused and never opened.</p>
+</li>
+<li>
+<p><strong>The current video's own page (only when needed):</strong> if the page still holds the data of the previous video (this can happen after YouTube's in-page navigation), the extension makes one request for the current video's page on youtube.com to read the right caption list.
+Like any request made by the YouTube page itself, these carry your browser's normal YouTube cookies. The extension does not read, store or copy those cookies. Both responses are size-limited and time-limited, are only read (not kept after you close the popup), and are not sent to anyone else.</p>
+</li>
+</ul>
+<p>If you open "Rate on Chrome Web Store" the Chrome Web Store opens in a new tab, and "Send feedback" opens an email draft; neither is sent by the extension.</p>
+<h2>What is stored, and where</h2>
+<p>Saved in your browser (chrome.storage.local) on your device, and deleted when you remove the extension:</p>
+<ul>
+<li>
+<p>Your choices: timestamp style, merge into paragraphs (on/off), the last caption language you picked, the translation language you picked, and the export format.</p>
+</li>
+<li>
+<p>The install date, a counter of how many transcripts you have opened, and the state of the rating reminder (see below).
+The video title, address, channel and transcript text are not stored by the extension. Copied transcripts go to your clipboard and saved ones to your Downloads folder only when you click Copy, Download or a line; the extension does not keep a copy.</p>
+</li>
+</ul>
+<h2>Uninstall page</h2>
+<p>When you remove the extension, Chrome opens a page on our policy site (startuptalkyindia.github.io). The address contains only the extension name, its version and its ID. Nothing is sent from the page; it shows a short "what went wrong?" form that opens an email draft you may choose to send. The site host may keep ordinary access logs.</p>
+<h2>Rating reminder</h2>
+<p>The extension keeps three local counters: when it was installed, how many transcripts you have opened, and how many times the reminder was shown and when (and whether you turned it off). After at least 7 days and 10 transcripts, the popup (never a website) shows one small card asking you to rate the extension. It is shown at most twice, at least 30 days apart, is the same for everyone, offers no reward, can be dismissed for good, and the counters are never sent anywhere.</p>
+<h2>What we do not do</h2>
+<p>We do not collect, sell or share your data, use it for advertising, use it to judge creditworthiness, or transfer it to anyone. The extension does not load or run remote code. It reads captions only: it does not download video or audio. It is not affiliated with, endorsed by or sponsored by YouTube or Google.</p>
+<h2>Permissions</h2>
+<ul>
+<li>
+<p><code>activeTab</code>: lets the extension read the tab you clicked it on, for that click only.</p>
+</li>
+<li>
+<p><code>scripting</code>: runs the page reader and the two YouTube requests (functions bundled in the extension) in that tab.</p>
+</li>
+<li>
+<p><code>storage</code>: saves your choices and the reminder counters.
+The extension asks for no access to websites in advance, no tabs permission, and has no always-on script.</p>
+</li>
+</ul>
+<h2>Changes</h2>
+<p>If this policy changes, the date above changes and the new text is published at the same address.</p>
+<h2>Contact</h2>
+<p>extensionsforseo@gmail.com</p></body></html>
